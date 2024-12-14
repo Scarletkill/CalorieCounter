@@ -4,7 +4,7 @@ import Navbar from "../Component/Navbar/Navbar";
 import Caloriefood from "../Component/Caloriefood/Caloriefood";
 const Home = () => {
     let calorieData = [
-        { text1: "Know your food", text2: "love your health", text3:"count your calories!" },
+        { text1: "Know Your Food", text2: "Love Your Health", text3: "Count Your Calories!" },
         { text1: "Eat More", text2: "Gain Less" },
     ]
     const [calorieAdd, setCalorieAdd] = useState(0);

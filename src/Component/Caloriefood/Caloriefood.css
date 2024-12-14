@@ -1,36 +1,41 @@
 .caloriefood{
-    margin: 270px auto 0;
-    max-width: 90%;
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    padding-left: 5%;
 }
 .calorie-text {
-    color: #FFF; /* White text */
+    justify-content: flex-start;
+    color: black; /* White text */
+    font-family:'Times New Roman';
     font-size: 60px; /* Large font size */
     font-weight: 50; /* Bold font */
-    line-height: 10px; /* Adjust spacing between lines */
+    line-height: 100px; /* Adjust spacing between lines */
+    padding-top: 40%;
 }
 
 @media (max-width: 768px) {
     .calorie-text {
         font-size: 50px; /* Adjust font size for smaller screens */
-        line-height:10px; /* Adjust line spacing */
+        line-height:50px; /* Adjust line spacing */
     }
 }
 
 @media(max-width:768px){
     .calorie-text{
         font-size: 60px;
-        line-height: 1.4px;
+        line-height: 3px;
     }
 }
 .calorie-explore {
     display: inline-flex;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     width: fit-content;
     margin: 70px auto 0; /* Center-align the button */
     padding: 5px 8px;
     padding-left: 30px;
-    padding-right: 60px;
+    padding-right: 30px;
     background-color: white;
     cursor: pointer;
     border-radius: 60px; /* Optional: rounded corners for better design */

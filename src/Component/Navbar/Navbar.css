@@ -1,32 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden ;
+}
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px; /* Added padding for better spacing */
-    box-sizing: border-box;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-    position: sticky; /* Keeps nav fixed at top */
+    justify-content: flex-start;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    background-color: beige;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
     top: 0;
-    z-index: 1000; /* Ensures the nav stays on top */
+    left:0;
+    z-index: 1000;
+    width: 100%;
 }
 
 .nav-logo {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
     font-family: 'Outfit', sans-serif;
-    font-size: 36px; /* Adjusted for better readability */
-    font-weight: 600; /* Slightly bolder for emphasis */
+    font-size: 36px;
+    font-weight: 600;
     color: #262626;
-    text-decoration: none; /* Ensures the logo appears as plain text */
+    text-decoration: none;
 }
 
 .nav-menu {
+    padding-left: 40%;
     display: flex;
     align-items: center;
+    gap: 70px; /* Adjusted for better spacing */
     list-style: none;
-    gap: 40px; /* Reduced gap for better spacing on smaller screens */
-    margin: 0;
-    padding: 0;
 }
 
 .nav-menu li {
@@ -37,7 +45,7 @@
 }
 
 .nav-menu li a {
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none;
     color: inherit;
 }
 
@@ -61,28 +69,36 @@
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+.nav-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
         gap: 20px;
         display: none; /* Hide by default for mobile */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: beige; /* Same background as navbar */
+        padding: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        z-index: 1000;
     }
 
     .nav-menu.active {
         display: flex; /* Show when active */
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: white;
-        padding: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
     }
 
     .nav-toggle {
-        display: block;
-        cursor: pointer;
+        display: block; /* Show toggle button on smaller screens */
     }
 }
 

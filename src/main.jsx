@@ -8,6 +8,8 @@ import Calculate from './Application/Calculate';
 import Contact from './Application/Contact';
 import About from './Application/About';
 import ImageRecognization from './Application/ImageRecognization';
+import Login from './Component/pages/login';
+import Register from './Component/pages/register';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +17,7 @@ root.render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />}>
+        <Route path='/' element={<Login />}>
           <Route index element={<Home />} />
           <Route path="/calculate" element={<Calculate />} />
           <Route path="/contact" element={<Contact />} />
