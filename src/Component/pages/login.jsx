@@ -1,4 +1,4 @@
-import './style/login.css';
+import '../../style/login.css';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import CustomFormField from '../Customfield/custom_form_field';

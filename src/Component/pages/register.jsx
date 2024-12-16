@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import CustomFormField from "../Customfield/custom_form_field";
-import "./style/register.css";
+import "../../style/register.css";
 
 const Register = () => {
     const [fullName, setFullName] = useState("")

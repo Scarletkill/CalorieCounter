@@ -1,4 +1,4 @@
-import "./style/custom_form_field_styles.css";
+import "../../style/custom_form_field_styles.css";
 export default function CustomFormField({ label, placeholder, type, value, cName, onChange, ref }) {
     return (
         <div id="form-field">
