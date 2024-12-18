@@ -4,7 +4,6 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Application/Home';
 import App from './App';
-import Calculate from './Application/Calculate';
 import Contact from './Application/Contact';
 import About from './Application/About';
 import ImageRecognization from './Application/ImageRecognization';
@@ -17,12 +16,13 @@ root.render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login />}>
-          <Route index element={<Home />} />
-          <Route path="/calculate" element={<Calculate />} />
+        <Route path='/' element={<App />}>
+          <Route index element={<Login />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path ='/imagerecognization' element={<ImageRecognization/>}/>
+          <Route path='/imagerecognization' element={<ImageRecognization />} />
+          <Route path='/register' element={<Register />} />
           <Route path="*" element={<div>Page Not Fount</div>} />
         </Route>
       </Routes>

@@ -1,5 +1,7 @@
+import React, { useState } from "react";
 import '../Navbar/Navbar.css';
 import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
     return (
@@ -8,7 +10,6 @@ const Navbar = () => {
             <button className="nav-toggle">☰</button>
             <ul className="nav-menu">
                 <li><Link to='/'><p>Home</p></Link></li>
-                <li><Link to='/calculate'><p>Calculate</p></Link></li>
                 <li><Link to='/about'><p>About Us</p></Link></li>
                 <li><Link to='/contact'><p>Contact</p></Link></li>
             </ul>
